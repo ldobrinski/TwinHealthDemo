@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="/assets/HTML.png">
+  <meta charset="UTF-8" />
+  <title>Health Pilot</title>
+  <link
+   href="https://cobrowse.screenmeet.com/CobrowseCore.js"
+   rel="preload"
+   as="script"
+  />
+  <style>
+   body {
+    overflow-x: hidden;
+   }
+   img {
+    max-width: 100%;
+   }
+   button {
+    margin: 8px;
+    color: white;
+    background-color: rgb(235,162,34);
+    position: absolute;
+    right: 200px;
+    width: 200px;
+    height: 50px;
+    border: 3px solid;
+    border-radius: 30px;
+    font-style: bold;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+  </style>
+ </head>
+
+ <body>
+  <div style="height: 100%; position: relative">
+   <img src="./assets/HTML.png" />
+   <script
+    type="text/javascript"
+    async="true"
+    src="https://cobrowse.screenmeet.com/CobrowseBootstrap.js"
+   ></script>
+   <button id="start" type="button" onclick="clickHandler()">
+    Video Chat With Us Now!
+   </button>
+   <script>
+    function clickHandler() {
+     window.Cobrowse.modal.openModal();
+     var x = document.getElementById("start");
+     x.hidden = true;
+    }
+   </script>
+  </div>
+ </body>
+</html>
